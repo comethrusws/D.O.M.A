@@ -1,0 +1,15 @@
+while True:
+        user_input = input("User: ")
+        response = generate_response(user_input)
+        if not response:
+            # Basic conversation response haru
+            if "thank you" in user_input.lower():
+                print("DOMA: You're welcome!")
+            elif "how are you" in user_input.lower():
+                print("DOMA: I'm doing well, thank you!")
+            elif "hello" in user_input.lower():
+                print("DOMA: Hi! How are you doing today?")
+            else:
+                print("DOMA: I'm sorry, I don't understand that. Can you please rephrase?")
+        else:
+            print("DOMA:", response)
